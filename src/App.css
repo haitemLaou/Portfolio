@@ -1,7 +1,156 @@
+:root {
+  --bg-color: #FBF8CC;
+  --text-color: #111827;
+  --accent-blue: #00237D;
+  --accent-yellow: #FFD84D;
+  --dark-blue:#03045E;
+  --dark-brown:#474306;
+}
+body{
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+}
+*{
+  color: var(--dark-blue);
+}
 .App {
-  text-align: center;
+  width: 100wh;
+  height: 100%;
+}
+a{
+  text-decoration: none;
+}
+/* Header Part */
+.Header{
+  color: var(--dark-blue);
+  width: 90%;
+  font-weight: bold;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Header a{
+  color: black;  
+  transition: color 0.3s;
+}
+.Header a:hover{
+  color:var(--dark-blue); 
+}
+.Header ul{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
 }
 
+.Header ul li:hover,.Header h1{
+  transition: 0.5s;
+}
+.Header ul li:hover,.Header h1:hover{
+  scale: 1.1;
+}
+
+/* Home Part */
+
+.hero{
+  margin: 20px 0;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.InfoText h1{
+  font-size: 60px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.profile-img{
+  width: 400px;
+  height: 400px;
+  background-position: center;
+}
+.img-box{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.Resume{
+  width: 75.42px;
+  border-radius: 10px;
+  height: 41.1px;
+  background-color: #ffd84da5;
+} 
+
+
+.Resume-button:hover .Resume-box , .Resume-box:hover{
+  cursor: pointer;
+  left: 0;
+  top: 0;
+
+} 
+.Resume-button{
+  position: relative;
+  max-width: fit-content;
+}
+.Resume-box{
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  padding: 9px; 
+  border-radius: 10px;
+  color: var(--dark-brown);
+  max-width: fit-content;
+  border: var(--dark-brown) 2px solid;
+  z-index: 3;
+  transition: 0.5s;
+}
+
+/*/////////// About Part ///////////////*/
+/*/////////////////////////////////////*/
+/*////////////////////////////////////*/
+.about,.work{
+  width: 95%;
+  margin: auto;
+  padding-left: 30px;
+}
+.title{
+  color: var(--accent-yellow) !important;
+  font-size: 40px;
+  text-align: left !important;
+}
+
+/*/////////// Work Part ///////////////*/
+/*/////////////////////////////////////*/
+/*////////////////////////////////////*/
+
+.contact a {
+  color: #00237D; /* your blue accent */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+.contact {
+  background-color: rgb(226, 152, 25);
+  color: white;
+  width: 100%;
+  padding: 20px 30px;
+  text-align: center;
+}
+.contact-list{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,26 +162,3 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

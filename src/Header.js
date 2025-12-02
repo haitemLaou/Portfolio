@@ -26,7 +26,7 @@ export default function Header({small}) {
       <div className='Header'>
         <h1>Laouaoudja Haitem</h1>
         <div style={{fontSize:"20px"}}> 
-          <ReorderIcon onClick={handleOpenSideBar} className='sideBar'/>
+          <ReorderIcon onClick={handleOpenSideBar} className='sideBar' sx={{fontSize:"40px"}}/>
           <SideBar show={show} list={ListSettings}/>
         </div>
     </div>

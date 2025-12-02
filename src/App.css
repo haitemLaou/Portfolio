@@ -136,7 +136,7 @@ a{
 .img-box{
   max-width: 400px;
   aspect-ratio: 1 / 1;
-  border-radius: 20%;
+  border-radius: 50% ;
   overflow: hidden;
   display: flex;
   justify-self: end;
